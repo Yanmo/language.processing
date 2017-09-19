@@ -20,7 +20,7 @@ def shuffled(sequences):
         shuffled.append(seq)
     return shuffled
 
-sentence = "I couldn't believe that I could actually understand what I was reading : the phenomenal power of the human mind ."
+sentence = u"I couldn't believe that I could actually understand what I was reading : the phenomenal power of the human mind ."
 print(sentence)
-sentence = " ".join(shuffled(list(sentence.split(" "))))
+sentence = " ".join(shuffled(list(sentence.split())))
 print(sentence)

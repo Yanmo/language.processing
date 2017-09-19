@@ -17,9 +17,9 @@ def ngram(sequences, N):
             ngram_list.append(sequences[index:index+N])
     return ngram_list
 
-sentence = "I am an NLPer"
-words = sentence.replace(",", "").replace(".", "").split(" ")
-charcters = list("".join(sentence.replace(",", "").replace(".", "").split(" ")))
+sentence = u"I am an NLPer"
+words = sentence.replace(",", "").replace(".", "").split()
+charcters = list("".join(sentence.replace(",", "").replace(".", "").split()))
 print("-sentence is " + sentence)
 print("--word bi-gram" )
 print(ngram(words, 3))

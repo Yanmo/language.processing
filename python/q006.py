@@ -16,8 +16,8 @@ def ngram(sequences, N):
             ngram_list.append(sequences[index:index+N])
     return ngram_list
 
-sentence1 = "paraparaparadise"
-sentence2 = "paragraph"
+sentence1 = u"paraparaparadise"
+sentence2 = u"paragraph"
 
 x = set(ngram(sentence1, 2))
 y = set(ngram(sentence2, 2))

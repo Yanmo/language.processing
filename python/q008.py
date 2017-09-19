@@ -20,7 +20,8 @@ def encrypt(sequences):
             encrypted.append(seq)
     return encrypted
 
-text = "AaBbCc"
-text2 = "AzByCx"
-print(encrypt(list(text)))
+text = list(u"AaBbCc")
+print(text)
+text2 = encrypt(list(text))
+print(text2)
 print(encrypt(list(text2)))
