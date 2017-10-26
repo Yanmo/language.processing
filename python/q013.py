@@ -8,9 +8,9 @@ import io
 # for python 3.x
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 # 12で作ったcol1.txtとcol2.txtを結合し，元のファイルの1列目と2列目をタブ区切りで並べたテキストファイルを作成せよ．確認にはpasteコマンドを用いよ．
-col1 = codecs.open("references/q012_col1.txt", "r", "utf-8")
-col2 = codecs.open("references/q012_col2.txt", "r", "utf-8")
-merge = codecs.open("references/q013.txt", "w", "utf-8")
+col1 = codecs.open("q012_col1.txt", "r", "utf-8")
+col2 = codecs.open("q012_col2.txt", "r", "utf-8")
+merge = codecs.open("q013.txt", "w", "utf-8")
 
 col1_lines = col1.readlines()
 col2_lines = col2.readlines()

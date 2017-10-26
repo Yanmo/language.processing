@@ -9,8 +9,8 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 # 各行の1列目だけを抜き出したものをcol1.txtに，2列目だけを抜き出したものをcol2.txtとしてファイルに保存せよ．確認にはcutコマンドを用いよ．
 hightemp = codecs.open("references/hightemp.txt", "r", "utf-8")
-col1 = codecs.open("references/q012_col1.txt", "w", "utf-8")
-col2 = codecs.open("references/q012_col2.txt", "w", "utf-8")
+col1 = codecs.open("q012_col1.txt", "w", "utf-8")
+col2 = codecs.open("q012_col2.txt", "w", "utf-8")
 
 for line in hightemp.readlines():
     cols = line.split()
